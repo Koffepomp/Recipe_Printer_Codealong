@@ -1,6 +1,21 @@
-﻿// Fråga användaren om en ingrediens
-// IF det finns en ingrediens - lägg denna ingrediens i en lista med strängar
-// ELSE IF användaren skrev Done - printa alla ingredienser
-// ELSE IF användaren skrev remove - fråga vilken ingrediens den vill ta bort
-// ELSE fråga användaren om en ingrediens
+﻿// fisksås
+
+ShowHeader();
+AskUser();
+
+void ShowHeader()
+{
+    Console.WriteLine("-------------------------------------------");
+    Console.WriteLine("              RECIPE PRINTER               ");
+    Console.WriteLine("-------------------------------------------");
+}
+
+void AskUser()
+{
+    Console.WriteLine("Do you want to add an ingredient to the list?");
+    Console.WriteLine("(type Remove to remove an ingredient)");
+    Console.WriteLine("(or type Done to show all ingredients)");
+    Console.Write("Reply: ");
+    string userInput = Console.ReadLine();
+}
 
